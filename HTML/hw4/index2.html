@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex</title>
+    <style>
+        .flex {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: row;
+            background: #00ffc8;
+        }
+
+        .header {
+            margin: 5px;
+            background: yellow;
+            height: 150px;
+            width: 99%;
+        }
+
+        .second {
+            margin-left: 5px;
+            background: red;
+            height: 225px;
+            width: 20%;
+        }
+
+        .third {
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            background: #00ffc8;
+        }
+
+        .fourth {
+            margin-bottom: 5px;
+            margin-left: 5px;
+            background: blue;
+            height: 110px;
+            width: 1195px;
+        }
+
+        .footer {
+            margin-top: 1px;
+            margin-bottom: 5px;
+            margin-left: 5px;
+            background: #33ff00;
+            height: 150px;
+            width: 99%;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="flex">
+    <div class="header"></div>
+</div>
+
+<div class="flex">
+    <div class="second"><img src="https://www.meme-arsenal.com/memes/2d1e0407f265927fa8d4e0c5c91c3b4d.jpg" width="305"
+                             height="225" alt=""></div>
+    <div class="third">
+        <div class="fourth"></div>
+        <div class="fourth"></div>
+    </div>
+</div>
+<div class="flex">
+    <div class="footer"></div>
+</div>
+</body>
+</html>
