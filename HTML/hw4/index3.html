@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex</title>
+    <style>
+        .flex {
+            display: flex;
+            width: 700px;
+            height: 700px;
+            flex-direction: column;
+            background: black;
+        }
+
+        .header {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-left: 5px;
+            background: orangered;
+            height: 250px;
+            width: 690px;
+        }
+
+        .second {
+            margin: 5px;
+            background: navy;
+            height: 225px;
+            width: 32%;
+        }
+
+        .third {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .footer {
+            margin-top: 0px;
+            margin-bottom: 5px;
+            margin-left: 5px;
+            background: orangered;
+            height: 250px;
+            width: 690px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="flex">
+    <div class="header"></div>
+
+    <div class="third">
+        <div class="second"><img
+                src="https://teens.drugabuse.gov/sites/default/files/styles/medium/public/blog/shutterstock_557065591.jpg?itok=bf7mALWW"
+                width="222" height="225"
+                alt=""></div>
+        <div class="second"><img
+                src="https://teens.drugabuse.gov/sites/default/files/styles/medium/public/blog/shutterstock_557065591.jpg?itok=bf7mALWW"
+                width="222" height="225"
+                alt=""></div>
+        <div class="second"><img
+                src="https://teens.drugabuse.gov/sites/default/files/styles/medium/public/blog/shutterstock_557065591.jpg?itok=bf7mALWW"
+                width="222" height="225"
+                alt=""></div>
+    </div>
+
+    <div class="footer"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex</title>
+    <style>
+        .flex {
+            display: flex;
+            width: 700px;
+            height: 700px;
+            flex-direction: column;
+            background: black;
+        }
+
+        .header {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-left: 5px;
+            background: #00dfff;
+            height: 125px;
+            width: 690px;
+        }
+
+        .navi {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-left: 5px;
+            background: #3cff00;
+            height: 105px;
+            width: 690px;
+
+        }
+
+        .father {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .son {
+            background: orangered;
+            margin: 5px;
+            height: 300px;
+            width: 480px;
+
+        }
+
+        .daughter {
+            background: orangered;
+            margin: 5px;
+            height: 300px;
+            width: 200px;
+        }
+
+        .footer {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-left: 5px;
+            background: rgba(0, 183, 255, 0.54);
+            height: 125px;
+            width: 690px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="flex">
+    <div class="header"></div>
+    <div class="navi"></div>
+
+    <div class="father">
+        <div class="son"><img src="https://medialeaks.ru/wp-content/uploads/2020/05/94d-369x500.jpg" height="300px"
+                              width="480px" alt="dog"></div>
+        <div class="daughter"><img
+                src="https://s3.wi-fi.ru/cp3o/zwTYwLNxg7byJNxeoKoMhdPm?response-content-type=image%2Fjpeg"
+                height="300px" width="200px" alt="dog2"></div>
+    </div>
+
+    <div class="footer"></div>
+</div>
+</body>
+</html>
