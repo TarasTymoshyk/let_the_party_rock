@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex</title>
+    <style>
+        .uni {
+            background: #33ff00;
+            height: 450px;
+            /*    однакова висота і бекграунд в усіх блоках, так як картинки й так їх заступають*/
+        }
+
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+            background: #00ffc8;
+            width: 1010px;
+            height: 920px;
+        }
+
+        .first {
+            display: block;
+            margin: 5px;
+            background: black;
+            width: 1000px;
+        }
+
+        .second {
+            display: block;
+            margin-left: 5px;
+            width: 690px;
+        }
+
+        .third {
+            display: block;
+            margin-left: 10px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+<div class="flex">
+    <div class="first uni"><img src="https://pbs.twimg.com/media/EX0rXZoWkAApFuH.jpg" width="1000" height="450"
+                                alt="first">
+    </div>
+    <div class="second uni"><img src="" alt=""><img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsTkTqYEnOMFiaFwwfhzTzGGkfQO6HmOLEn7UZl2b5uL79JFepkjDMXqcA89RsbKtKK8g&usqp=CAU"
+            height="450" width="690"
+            alt="second uni"></div>
+    <div class="third"><img src="https://www.meme-arsenal.com/memes/c1a3f6a76ded61e9a585858b18f7c125.jpg" width="300"
+                            height="450" alt="third"></div>
+</div>
+</body>
+</html>
