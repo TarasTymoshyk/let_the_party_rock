@@ -4,7 +4,7 @@
         flex-direction: column;
         justify-content: space-between;
         width: 480px;
-        height: 4200px;
+        height: 4485px;
         background: #33ff00;
     }
 
@@ -14,6 +14,7 @@
         flex-direction: column;
         align-items: center;
         width: 480px;
+        height: 1200px;
         border: none;
         background: transparent;}
 
@@ -75,9 +76,8 @@
         display: flex;
         justify-content: flex-start;
         flex-direction: column;
-        align-items: center;
         width: 480px;
-        height: 900px;
+        height: 2190px;
         background: navy;
     }
 
