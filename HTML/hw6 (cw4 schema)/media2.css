@@ -1,0 +1,137 @@
+@media screen and (min-width: 0) and (max-width: 480px) {
+    .flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 480px;
+        height: 4485px;
+        background-image: url(../images/galaxy.jpg);
+    }
+
+    .container-1 {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        width: 480px;
+        height: 1200px;
+        border: none;
+        background: transparent;}
+
+    .cont-1-inside {
+        width: 480px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .allbiggers-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .bigger_and_lines-1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .biggerblock-1 {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        height: 400px;
+        background-image: url(../images/cat1.jpg);
+        border-radius: 25px;
+    }
+
+    .lines-1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+
+    .lines-1bg {
+        background: rgba(255, 0, 0, 0.43);
+        border: solid 1px navy;
+        margin-top: -24px
+    }
+
+    .longline-1 {
+        height: 50px;
+        width: 180px;
+        background: navy;
+        border-radius: 30px;
+    }
+
+    .shortline-1 {
+        height: 50px;
+        width: 120px;
+        background: navy;
+        border-radius: 30px;
+    }
+
+    .container-2 {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        width: 480px;
+        height: 2190px;
+        background: transparent;
+    }
+
+    .allbiggers-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .bigger_and_lines-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .biggerblock-2 {
+        display: flex;
+        flex-direction: column;
+        width: 450px;
+        height: 450px;
+        border-radius: 50%;
+        background: transparent;
+        background-image: url(../images/dog1.jpg);
+    }
+
+    .lines-2 {
+        display: flex;
+        flex-direction: row;
+        widows: 400px;
+        padding-top: 40px;
+    }
+
+    .longline-2 {
+        height: 50px;
+        width: 200px;
+        background: #33ff00;
+        border-radius: 20px;
+    }
+
+    .mediumline-2 {
+        height: 50px;
+        width: 150px;
+        background: #33ff00;
+        border-radius: 20px;
+    }
+
+    .shortline-2 {
+        height: 50px;
+        width: 100px;
+        background: #33ff00;
+        border-radius: 20px;
+    }
+    .allbiggers-2 > div:nth-child(2n+2) {
+        background: rgba(255, 0, 0, 0.28);
+    border: none}
+}
