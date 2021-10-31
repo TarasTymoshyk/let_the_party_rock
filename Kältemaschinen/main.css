@@ -1,0 +1,135 @@
+body {
+    background: white;
+}
+
+.font_color_1 {
+    color: #414141;
+}
+
+.header_menu {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: solid 1px #d1d1d1;
+}
+
+.dropdown-menu {
+    border: solid 5px black;
+}
+
+.frigel_1_left_bigletters li {
+    font-family: "Arial";
+    margin-left: -30px;
+    list-style: none;
+    font-style: normal;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 1.5;
+    color: #1652AC;
+}
+
+.frigel_1 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 150px;
+}
+
+.frigel_1_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    width: 50%;
+}
+
+.frigel_line {
+    width: 227px;
+    height: 7px;
+    background: #EDEFF3;
+}
+
+.frigel_1_left_smallletters li {
+    font-style: normal;
+    list-style: none;
+    margin-left: -30px;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 32px;
+    letter-spacing: -0.4px;
+    color: #020303;
+}
+
+.frigel_2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.frigel_2_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+p {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: left;
+    letter-spacing: 2.42px;
+    color: #1652AC;
+}
+
+.frigel_2_right li {
+    font-family: Arial;
+    font-style: normal;
+    list-style: none;
+    font-weight: normal;
+    margin-left: -30px;
+    font-size: 17px;
+    line-height: 32px;
+    color: #45494F;
+}
+
+.frigel_2_right ul {
+    margin-top: -50px;
+}
+
+span {
+    font-weight: 900;
+}
+
+.plant {
+    width: 100%;
+    height: 729px;
+    background: linear-gradient(180deg, #163DA2 0%, #003584 100%);
+    display: flex;
+    flex-direction: row;
+}
+
+.plant_right {
+    display: flex;
+    flex-direction: column;
+    margin-left: 180px;
+    margin-top: 180px;
+}
+
+.plant_right p {
+    color: white;
+}
+
+.plant_right li {
+    font-family: Calibri;
+    font-style: normal;
+    list-style: none;
+    margin-left: -30px;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 32px;
+    color: #FBFDFF;
+}
+
+.btn-group.dropstart {
+    display: none;
+}
