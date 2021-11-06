@@ -1,0 +1,396 @@
+@media screen and (max-width: 320px) {
+    .header_menu {
+        padding: 2.5px 0px 0px 2.5px;
+    }
+
+    .header_menu_right, .header_menu_left {
+        display: none;
+    }
+
+    .visible {
+        display: flex;
+        flex-direction: row;
+        column-gap: 5px;
+    }
+
+    .nav_menu {
+        padding-left: 5px;
+        padding-right: 5px;
+        height: 150px;
+    }
+
+    .schedule, .location {
+        display: none;
+    }
+
+    .logo {
+        position: absolute;
+        margin-left: 2.5px;
+        top: 40px;
+    }
+
+    .logo img {
+        margin-top: 15px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .logo p {
+        font-size: 16px;
+        padding-top: 15px;
+    }
+
+    .logo b {
+        font-size: 8px;
+        padding-top: -15px;
+    }
+
+    .logo_text {
+        margin-left: 5px;
+    }
+
+    .logo_text p {
+        margin-bottom: 5px;
+    }
+
+    .whatsapp {
+        position: absolute;
+        left: 175px;
+        top: 100px;
+        background: rgba(51, 255, 0, 0.48);
+        border-radius: 1px;
+    }
+
+    .whatsapp img {
+        width: 13px;
+        height: 12px;
+    }
+
+    .whatsapp b {
+        font-size: 9px;
+    }
+
+    .phone {
+        position: absolute;
+        left: 180px;
+        top: 55px;
+        text-align: right;
+    }
+
+    .phone p {
+        font-size: 14px;
+    }
+
+    .phone b {
+        font-size: 9px;
+        margin-top: -8px;
+    }
+
+    .nav_menu .sup_menu {
+        display: none;
+    }
+
+    .nav_menu_bottom button {
+        width: 60px;
+        height: 60px;
+    }
+
+    button span {
+        display: none;
+    }
+
+    .nav_menu_bottom img {
+        width: 40px;
+        height: 40px;
+        margin-left: 10px;
+    }
+
+    .nav_menu_bottom {
+        justify-content: space-between;
+        column-gap: 5px;
+    }
+
+    .nav_menu_bottom .input-group {
+        width: 77%;
+    }
+
+    .nav_menu_bottom input {
+        font-size: 12.5px;
+    }
+
+    .title {
+        margin-left: 5px;
+        margin-top: 15px;
+        margin-right: 0px;
+        flex-direction: column;
+    }
+
+    .clutch_form {
+        width: 98%;
+        height: 185px;
+        margin-top: 10px;
+    }
+
+    .clutch_form_text p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .clutch_form_row span {
+        display: none;
+    }
+
+    .clutch_form_text b {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .inner {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+
+    .inner h2 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .inner h3 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .clutch_form_text {
+        padding: 15px;
+        justify-content: space-evenly;
+    }
+
+    .clutch_form_text button.btn.btn-success {
+        height: 25px;
+        width: 150px;
+    }
+
+    .three_dot {
+        position: absolute;
+        left: 134px;
+        top: 46.5px;
+    }
+
+    .clutch img {
+        position: absolute;
+        left: 150px;
+        top: 240px;
+        width: 165px;
+        height: 140px;
+    }
+
+    .small_items {
+        flex-direction: row;
+        height: 187px;
+        width: max-content;
+        column-gap: 5px;
+        margin-left: 0px;
+        margin-top: 10px;
+        overflow-x: hidden;
+    }
+
+    .carousel_menu {
+        width: max-content;
+        padding-left: 5px;
+        padding-top: 20px;
+        column-gap: 5px;
+        height: 230px;
+    }
+
+    .switch_right img, .switch_left img {
+        display: none;
+    }
+
+    .carousel_element {
+        height: 170px;
+        width: max-content;
+    }
+
+    .carousel_element img {
+        height: 145px;
+        width: 105px;
+        margin-top: 15px;
+    }
+
+    .carousel_text p {
+        font-size: 16px;
+    }
+
+    .carousel_element b {
+        font-size: 12px;
+    }
+
+    .carousel_text {
+        padding: 10px;
+        justify-content: space-evenly;
+    }
+
+    .carousel_element button {
+        width: 100px;
+        margin-top: 0;
+    }
+
+    .buttons {
+        margin-left: 5px;
+        column-gap: 5px;
+        justify-content: flex-start;
+    }
+
+    .buttons button {
+        font-size: 11px;
+    }
+
+    .content, .content2 {
+        margin-left: 5px;
+        margin-right: 5px;
+        column-gap: 5px;
+        overflow-x: hidden;
+    }
+
+    .product_card1 {
+        width: 50%;
+        justify-content: flex-start;
+        row-gap: 10px;
+        height: fit-content;
+    }
+
+    .product_card_img img {
+        width: 130px;
+        height: 108px;
+    }
+
+    .deal span img {
+        display: none;
+    }
+
+    .deal {
+        column-gap: 10px;
+    }
+
+    .deal button {
+        font-size: 12px;
+        width: 150px;
+        border-radius: 5px;
+    }
+
+    .rate b {
+        font-size: 12px;
+    }
+
+    .rate img {
+        width: 35px;
+        height: 14px;
+    }
+
+    .product_name p {
+        font-size: 14px;
+    }
+
+    u {
+        margin-left: 10px;
+    }
+
+    .long_line {
+        display: none
+    }
+
+    .circle, .vertical_line {
+        display: none;
+    }
+
+    .news_date_block {
+        margin-left: 5px;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 200px;
+    }
+
+    .news_txt_block_day {
+        position: absolute;
+        left: 10px;
+        top: 1670px;
+    }
+
+    .news_txt_block_day2 {
+        position: absolute;
+        left: 10px;
+        top: 1895px;
+    }
+
+    .news_txt_block_day3 {
+        position: absolute;
+        left: 10px;
+        top: 2115px;
+    }
+
+    .footer_menu {
+        height: max-content;
+        flex-direction: column;
+        row-gap: 25px;
+        padding: 20px 5px 10px 5px;
+        position: absolute;
+        top: 2400px;
+    }
+
+    .footer_column p {
+        margin-bottom: -5px;
+        width: 100%;
+    }
+
+    .footer_column b {
+    }
+
+    .footer_column {
+        width: 100%;
+    }
+
+    .user_block {
+        position: absolute;
+        padding-left: 5px;
+        left: 0px;
+        top: 3565px;
+        background: #1d7d00;
+        padding-top: 20px;
+    }
+
+    .first_line {
+        flex-direction: column;
+    }
+
+    .first_line p {
+        font-size: 14px;
+    }
+
+    .user_block p {
+        font-size: 14px;
+    }
+
+    .third_line {
+        margin-right: 5px;
+    }
+
+    .fourth_line {
+        justify-content: flex-start;
+        margin-left: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .license {
+        position: absolute;
+        top: 3820px;
+        padding: 5px 5px 10px 5px;
+        width: 320px;
+        height: 40px;
+        border-top: solid 2px white;
+    }
+
+    .button_else {
+        margin-bottom: 30px;
+    }
+}

@@ -6,6 +6,10 @@ body {
     width: 100%;
 }
 
+.visible {
+    display: none;
+}
+
 .header_menu {
     background: #1d7d00;
     height: 6vh;
@@ -13,7 +17,6 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0px 75px;
-    box-shadow: 0px 0px 5px rgb(4, 255, 0);
 }
 
 .header_menu button {
@@ -712,7 +715,9 @@ span:hover {
 
 .footer_column b {
     font-size: 14px;
+    line-height: 18px;
     font-weight: 400;
+
 }
 
 .two_last {
@@ -724,8 +729,8 @@ span:hover {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 2685px;
-    left: 917px;
+    top: 2695px;
+    left: 927px;
 }
 
 .first_line {
@@ -790,14 +795,14 @@ span:hover {
 .license {
     height: 25px;
     background: #1d7d00;
-    padding: 15px 75px 35px 75px;
+    padding: 30px 75px 35px 75px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
 }
 
 .license p {
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 400;
     color: #33ff00;
     text-shadow: 1px 1px 3px black;
