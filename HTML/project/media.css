@@ -1,5 +1,7 @@
 @media screen and (max-width: 320px) {
-
+    body {
+        overflow-x: hidden;
+    }
     .header_menu {
         padding: 2.5px 0px 0px 2.5px;
     }
