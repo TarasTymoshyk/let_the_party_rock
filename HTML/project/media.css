@@ -1,4 +1,5 @@
 @media screen and (max-width: 320px) {
+
     .header_menu {
         padding: 2.5px 0px 0px 2.5px;
     }
@@ -123,6 +124,7 @@
         margin-top: 15px;
         margin-right: 0px;
         flex-direction: column;
+        overflow-x: hidden;
     }
 
     .clutch_form {
@@ -191,7 +193,6 @@
         column-gap: 5px;
         margin-left: 0px;
         margin-top: 10px;
-        overflow-x: hidden;
     }
 
     .carousel_menu {
@@ -209,6 +210,7 @@
     .carousel_element {
         height: 170px;
         width: max-content;
+        overflow-x: hidden;
     }
 
     .carousel_element img {
