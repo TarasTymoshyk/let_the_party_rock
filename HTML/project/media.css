@@ -124,7 +124,7 @@
         margin-top: 15px;
         margin-right: 0px;
         flex-direction: column;
-        overflow-x: hidden;
+        overflow: hidden;
     }
 
     .clutch_form {
@@ -193,14 +193,15 @@
         column-gap: 5px;
         margin-left: 0px;
         margin-top: 10px;
+        margin-bottom: 5px;
     }
 
     .carousel_menu {
-        width: max-content;
         padding-left: 5px;
         padding-top: 20px;
         column-gap: 5px;
         height: 230px;
+        overflow: hidden;
     }
 
     .switch_right img, .switch_left img {
@@ -209,8 +210,6 @@
 
     .carousel_element {
         height: 170px;
-        width: max-content;
-        overflow-x: hidden;
     }
 
     .carousel_element img {
