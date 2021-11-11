@@ -11,6 +11,12 @@
 
 <script>
 
+    // - Створити змінні. Присвоїти кожному з них значення: 'hello','owu','com', 'ua', 1, 10, -999, 123, 3.14, 2.7, 16, true, false.
+    //     Вивести кожну змінну за допомогою: console.log , alert, document.write
+    //
+    // - Переприсвоїти кожній змінній з завдання значення на довільне.
+    //     Вивести кожну змінну за допомогою: console.log , alert, document.write
+
     let a = 'hello'
     console.log(a);
     // alert(a);
@@ -143,25 +149,29 @@
     document.write(l);
 
 
+    // - Створити 3 змінних firstName, middleName, lastName, наповнити їх своїм ПІБ. З'єднати їх в одну змінну person. (Не об'єкт)
+    // - За допомогою 3х різних prompt() отримати 3 слова які являються вашими Імям, По-Батькові та роками.
+    //     Вивести "Вітаю *Імя* *По батькові*. Тобі *вік* років".
+    // - За допомогою оператора typeof визначити типи наступних змінних та вивести їх в консоль.
+    //     let a = 100; let b = '100'; let c = true;
+
     let firstName;
     let middleName;
     let lastname;
     firstName = 'Taras';
     middleName = 'Romanovych';
     lastname = 'Tymoshyk';
-    console.log([lastname], [firstName], [middleName],)
-    let person;
-    person = {
-        name: 'Taras',
-        surname: 'Tymoshyk',
-        age: 27
-    }
+    let person = firstName + " " + middleName + " " + lastname;
+    console.log(lastname, firstName, middleName);
     console.log(person.name);
     console.log(person.surname);
     console.log(person.age);
     // let z = prompt('enter');
     // console.log(person[z])
     console.log(['Вітаю'], [person.name], ['Тобі'], [person.age], ['років'])
+
+    // - Визначити відповідний оператор в виразах що б вийшов відповідний результат.
+    //     В однакових виразах не використовувати однакові оператори!!!
 
     let A = 100;
     console.log(A);
@@ -173,8 +183,9 @@
     console.log(typeof B);
     console.log(typeof C);
 
-
-
+    // - Визначити відповідний оператор в виразах що б вийшов відповідний результат.
+    //     В однакових виразах не використовувати однакові оператори!!!
+    // - Подумайте Какие значения выведет в окно браузера следующий фрагмент кода?  и почему?
 
 
     let str = "20";
