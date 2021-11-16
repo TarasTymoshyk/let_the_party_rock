@@ -128,10 +128,10 @@ let numbers = [2, 17, 13, 6, 22, 31, 45, 66, 100, -18];
 // 9. всі попередні завдання (окрім 8), але в зворотньому циклі (с заду на перед)
 // 7. замінити кожне число кратне 3 на слово "okten"
 
-let i=numbers.length-1;
-for (let i = numbers.length-1; i >=0; i--) {
-    if (numbers[i] % 3 === 0) {
-        numbers[i] = 'okten'
-    }
-    console.log(numbers[i])
-}
+// let i=numbers.length-1;
+// for (let i = numbers.length-1; i >=0; i--) {
+//     if (numbers[i] % 3 === 0) {
+//         numbers[i] = 'okten'
+//     }
+//     console.log(numbers[i])
+// }
