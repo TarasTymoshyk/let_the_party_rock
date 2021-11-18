@@ -133,14 +133,15 @@
 
 // - Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
 
-// let array = [8, 23, 24]
-// function reverse(array) {
-//     let reverse = [];
-//     while (array.length) {
-//         reverse.push(array.pop());
-//     }
-//
-//     return reverse;
-// }
-//
-// console.log(reverse(array));
+let array = [8, 23, 24]
+function reverse(array) {
+    let reverse = [];
+    while (array.length) {
+        reverse.push(array.pop());
+    }
+
+    return reverse;
+}
+
+console.log(reverse(array));
+
