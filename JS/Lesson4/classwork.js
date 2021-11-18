@@ -102,3 +102,45 @@
 // }
 //
 // console.log(returnmin_logmax(10, 20, 50, 1))
+
+// - створити функцію яка заповнює масив рандомними числами
+// (цей код генерує рандомні числа в діапазоні від 0 до 100 - Math.round(Math.random()*100)) та виводить його.
+
+// function array_randomizer() {
+//     let arr = [];
+//     for (let i = 0; i < 100; i++) {
+//         arr[i] = (Math.round(Math.random() * 100))
+//
+//     }
+//     return arr;
+// }
+//
+// console.log(array_randomizer())
+
+// - створити функцію яка заповнює масив рандомними числами в діапазоні від 0 до limit. limit - аргумент, який характеризує кінцеве значення діапазону.
+
+// function array_randomizer() {
+//     let limit = prompt()
+//     let arr = [];
+//     for (let i = 0; i < limit; i++) {
+//         arr[i] = (Math.round(Math.random() * limit))
+//
+//     }
+//     return arr;
+// }
+//
+// console.log(array_randomizer())
+
+// - Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
+
+// let array = [8, 23, 24]
+// function reverse(array) {
+//     let reverse = [];
+//     while (array.length) {
+//         reverse.push(array.pop());
+//     }
+//
+//     return reverse;
+// }
+//
+// console.log(reverse(array));
