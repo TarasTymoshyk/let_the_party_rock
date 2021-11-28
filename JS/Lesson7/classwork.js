@@ -139,4 +139,4 @@ let match = (arr_c, prince) => {
 match(arr_c, prince)
 
 let cinderella = arr_c.find(value => value.size === prince.shoe);
-console.log('the shkar was lost by', cinderella)
+console.log('the shkar was lost by', cinderella.name)
