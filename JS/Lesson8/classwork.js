@@ -1,5 +1,6 @@
 // Взяти файл template_2.html та працювати в ньому
 // 1) Напишіть код, який :
+
 // a) змінює текст елементу з ід main_header на назву групи в якій ви вчитесь (mon-year)
 
 // let rename_h1 = document.getElementsByTagName('h1');
@@ -82,7 +83,10 @@
 // k) отримує елемент
 //  з класом content_1 та заміняє  в ньому тест на довільний. Текст отримати з prompt()
 
-// document.getElementsByClassName('content_1').innerText = prompt();
+// let x = document.getElementsByClassName('content_1')
+// for (const x1 of x) {
+//     x1.innerText = prompt()
+// }
 
 // l) отримати елементи p та змінити їм padding на 20px
 
