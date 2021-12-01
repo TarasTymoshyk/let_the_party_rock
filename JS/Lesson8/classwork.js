@@ -23,9 +23,16 @@
 
 // d) отримує текст який зберігається в елементі з класом listElement2
 
-// function addText (text) {
-//     let ElementsByClassName = document.getElementsByClassName('listElement2');
-//     ElementsByClassName.innerText = text;
+// // function addText (text) {
+// //     let ElementsByClassName = document.getElementsByClassName('listElement2');
+// //     ElementsByClassName.innerText = text;
+// // }
+
+// або
+
+// let addText = document.getElementsByClassName('listElement2');
+// for (let i = 0; i < addText.length; i++) {
+//     console.log(addText[i].textContent);
 // }
 
 // e) отримує всі елементи li та змінює ім колір фону на сірий
@@ -72,7 +79,8 @@
 //     }
 // }
 
-// k) отримує елемент з класом content_1 та заміняє  в ньому тест на довільний. Текст отримати з prompt()
+// k) отримує елемент
+//  з класом content_1 та заміняє  в ньому тест на довільний. Текст отримати з prompt()
 
 // document.getElementsByClassName('content_1').innerText = prompt();
 
