@@ -80,8 +80,7 @@
 //     }
 // }
 
-// k) отримує елемент
-//  з класом content_1 та заміняє  в ньому тест на довільний. Текст отримати з prompt()
+// k) отримує елемент з класом content_1 та заміняє  в ньому тест на довільний. Текст отримати з prompt()
 
 // let x = document.getElementsByClassName('content_1')
 // for (const x1 of x) {
