@@ -49,29 +49,29 @@ let simpsons = [
 // - взяти попередній масив з сімпсонами.
 //     Проітерувати його, створиши для кожного елементу масиву <div class='member'>. Для кожної властивості елементу створити окремий блок, та помістити його у div.member
 
-// for (let item of simpsons) {
-//     let div = document.createElement('div');
-//     div.classList.add('member');
-//     let name = document.createElement('div');
-//     name.innerText = item.name;
-//     let surname = document.createElement('div');
-//     surname.innerText = item.surname;
-//     let age = document.createElement('div');
-//     age.innerText = item.age;
-//     let info = document.createElement('div');
-//     info.innerText = item.info;
-//     let photo = document.createElement('img');
-//     photo.src = item.photo;
-//
-//     div.style.padding = '20px';
-//
-//     div.appendChild(name)
-//     div.appendChild(surname)
-//     div.appendChild(age)
-//     div.appendChild(info)
-//     div.appendChild(photo)
-//     document.body.appendChild(div)
-// }
+for (let item of simpsons) {
+    let div = document.createElement('div');
+    div.classList.add('member');
+    let name = document.createElement('div');
+    name.innerText = item.name;
+    let surname = document.createElement('div');
+    surname.innerText = item.surname;
+    let age = document.createElement('div');
+    age.innerText = item.age;
+    let info = document.createElement('div');
+    info.innerText = item.info;
+    let photo = document.createElement('img');
+    photo.src = item.photo;
+
+    div.style.padding = '20px';
+
+    div.appendChild(name)
+    div.appendChild(surname)
+    div.appendChild(age)
+    div.appendChild(info)
+    div.appendChild(photo)
+    document.body.appendChild(div)
+}
 
 // Створити для кожного елементу масиву свій блок, блок розділити блоками, в яких будуть зберігатись значення окремих властивостей, для властивості modules зробити список з елементами
 // Приклад структири знаходиться у файлі example.png
@@ -146,31 +146,31 @@ let coursesArray = [
     }
 ];
 
-// for (let div of coursesArray) {
-//     let item = document.createElement('div');
-//
-//     let title = document.createElement('h2');
-//     title.innerText = div.title;
-//
-//     let month = document.createElement('div');
-//     month.innerText = div.monthDuration;
-//
-//     let hours = document.createElement('div');
-//     hours.innerText = div.hourDuration;
-//
-//     let modules = document.createElement('ul');
-//
-//     for (let element of div.modules) {
-//         let module = document.createElement('li');
-//         module.innerText = element;
-//         modules.appendChild(module);
-//     }
-//
-//     item.style.padding = '20px';
-//
-//     item.appendChild(title);
-//     item.appendChild(month);
-//     item.appendChild(hours);
-//     item.appendChild(modules);
-//     document.body.appendChild(item);
-// }
+for (let div of coursesArray) {
+    let item = document.createElement('div');
+
+    let title = document.createElement('h2');
+    title.innerText = div.title;
+
+    let month = document.createElement('div');
+    month.innerText = div.monthDuration;
+
+    let hours = document.createElement('div');
+    hours.innerText = div.hourDuration;
+
+    let modules = document.createElement('ul');
+
+    for (let element of div.modules) {
+        let module = document.createElement('li');
+        module.innerText = element;
+        modules.appendChild(module);
+    }
+
+    item.style.padding = '20px';
+
+    item.appendChild(title);
+    item.appendChild(month);
+    item.appendChild(hours);
+    item.appendChild(modules);
+    document.body.appendChild(item);
+}
