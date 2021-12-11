@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            margin-left: 100px;
+            margin-right: 100px;
+            color: white;
+        }
+
+        .list {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .post {
+            width: 200px;
+            height: 300px;
+            padding: 10px;
+            border: 2px solid #ffd100;
+            border-radius: 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            vertical-align: center;
+            margin: 10px 5px;
+            background: #4d4d4d;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 40px;
+            color: #ffeb00;
+        }
+
+        p {
+            font-size: 10px;
+        }
+
+        b {
+            font-size: 20px;
+        }
+        b:nth-child(2n-1) {
+            color: #ffeb00;
+            font-size: 12px;
+        }
+
+    </style>
+</head>
+<body>
+<script>
+    // 1. Отримати відповідь з цього ресурсу відповідь, та вивести в документ об'єкти. Застилізувати, за допомоги css, щоб отримати 5 елементів в рядку.
+    // Для кожного елементу свій блок div.post
+    // Всі характеристики повинні мати свої блоки всередені div.post
+
+    // fetch('https://jsonplaceholder.typicode.com/posts')
+    //     .then(result => {
+    //         return result.json()
+    //     })
+    //     .then(posts => {
+    //         let content = document.createElement('div');
+    //         content.classList.add('list');
+    //
+    //         for (const post of posts) {
+    //             let div = document.createElement('div');
+    //             div.classList.add('post');
+    //             div.innerHTML = `<h1>${post.id}</h1><b>${post.title}</b><p>${post.body}</p>`;
+    //
+    //             content.appendChild(div);
+    //             document.body.appendChild(content);
+    //         }
+    //     })
+
+    // 2.
+    // Отримати відповідь з цього ресурсу відповідь, та вивести в документ як в прикладі на занятті.
+    //     Для кожного елементу свій блок div.comment
+    // Всі характеристики повинні мати свої блоки всередені div.comment
+
+    // fetch('https://jsonplaceholder.typicode.com/comments')
+    //     .then(result => {
+    //         return result.json()
+    //     })
+    //     .then(comments => {
+    //         let content = document.createElement('div');
+    //         content.classList.add('list');
+    //
+    //         for (const comment of comments) {
+    //             let div = document.createElement('div');
+    //             div.classList.add('post');
+    //             div.innerHTML = `<h1>${comment.id}</h1><b>${comment.name}</b><b>${comment.email}</b><p>${comment.body}</p>`;
+    //             content.appendChild(div);
+    //             document.body.appendChild(content);
+    //         }
+    //     })
+</script>
+</body>
+</html>
