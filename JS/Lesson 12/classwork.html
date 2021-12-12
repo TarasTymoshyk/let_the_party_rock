@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+    }
+
+    .list {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .post {
+        width: 240px;
+        margin: 10px;
+        padding: 10px;
+        border: 2px solid navy;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .comments {
+        width: 200px;
+        height: 250px;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid navy;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    h1 {
+        font-size: 40px;
+        color: #ffeb00;
+    }
+    p {
+        font-size: 10px;
+    }
+    b {
+        font-size: 20px;
+    }
+    b:nth-child(2n-1) {
+        color: #ffeb00;
+        font-size: 12px;
+    }
+
+
+</style>
+<body>
+<script>
+    // Отримати відповідь з цього ресурсу відповідь, та вивести в документ як в прикладі на занятті
+    //     зробити кнопку до кожного поста. при кліку на яку виводяться в окремий блок всі коментарі поточного поста
+
+    fetch('https://jsonplaceholder.typicode.com/posts')
+        .then(response => {return response.json()})
+        .then(posts => {
+            let list = document.createElement('div');
+            list.classList.add('list');
+            for (let post of posts) {
+                let div = document.createElement('div');
+                div.classList.add('post');
+                div.innerHTML = `<h1>${post.id}</h1><b>${post.title}</b><p>${post.body}</p>`;
+                let button = document.createElement('button');
+                button.innerText = 'Press';
+                button.onclick = function () {
+                    fetch('https://jsonplaceholder.typicode.com/comments')
+                        .then(result => result.json())
+                        .then(comments => {
+                            for (let comment of comments) {
+                                if (post.id === comment.postId) {
+                                    let div_comments = document.createElement('div');
+                                    div_comments.classList.add('comments');
+                                    div_comments.innerHTML = `<h1>${comment.id}</h1><b>${comment.name}</b>
+                                        <b>${comment.email}</b><p>${comment.body}</p>`;
+                                    div.appendChild(div_comments);
+                                }
+                            }
+                        })
+                }
+                div.appendChild(button);
+            list.appendChild(div);
+            document.body.appendChild(list);
+            }
+        })
+</script>
+</body>
+</html>
