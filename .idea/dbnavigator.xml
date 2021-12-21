@@ -26,13 +26,34 @@
     <show-object-properties value="true" />
     <loaded-nodes>
       <connection connection-id="211a0b11-61c9-4a72-ab83-ed119f38ac95">
-        <schema name="impulse" object-types="table, view" />
+        <schema name="impulse" object-types="table, view, procedure, function, constraint, index, column, dataset trigger" />
       </connection>
     </loaded-nodes>
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="211a0b11-61c9-4a72-ab83-ed119f38ac95">
-      <console name="impulse" type="STANDARD" schema="impulse" session="Main"><![CDATA[select * from cars]]></console>
+      <console name="impulse" type="STANDARD" schema="impulse" session="Main"><![CDATA[--1.Вибрати усіх клієнтів, чиє ім'я має менше ніж 6 симв
+select * from client where length(FirstName)<'6'
+--2.Вибрати львівські відділення банку.
+select * from department where `DepartmentCity`='Lviv'
+--3.Вибрати клієнтів з вищою освітою та посортувати по прізвищу.
+select * from client where `Education`='high' order by `LastName`
+--4.Виконати сортування у зворотньому порядку над таблицею Заявка і вивести 5 останніх елементів.
+--(Не знайшов таблицю "Заявка"... взяв application)
+select * from application order by `idApplication` desc limit 5
+--5.Вивести усіх клієнтів, чиє прізвище закінчується на OV чи OVA.
+select * from client where `LastName` like '%ov' or `LastName`like '%ova'
+--6.Вивести клієнтів банку, які обслуговуються київськими відділеннями.
+select * from client join department where `DepartmentCity`='Kyiv'
+--7.Знайти унікальні імена клієнтів.
+select distinct FirstName from client
+--8.Вивести дані про клієнтів, які мають кредит більше ніж на 5000 тисяч гривень.
+select * from client join application where `Sum`>5000
+--9.Порахувати кількість клієнтів усіх відділень та лише львівських відділень.
+select sum(CountOfWorkers) from department;
+select sum(CountOfWorkers) from department where `DepartmentCity`='Lviv'
+--10.Знайти кредити, які мають найбільшу суму для кожного клієнта окремо.
+???]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
@@ -42,6 +63,10 @@
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="211a0b11-61c9-4a72-ab83-ed119f38ac95" />
+  </component>
+  <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="211a0b11-61c9-4a72-ab83-ed119f38ac95" dataset="impulse.client" active-filter-id="" />
+    <filter-actions connection-id="211a0b11-61c9-4a72-ab83-ed119f38ac95" dataset="impulse.cars" active-filter-id="" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
